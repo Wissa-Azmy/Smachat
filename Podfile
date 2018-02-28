@@ -7,4 +7,8 @@ target 'Smachat' do
 
   # Pods for Smachat
 
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Socket.IO-Client-Swift'
+
 end

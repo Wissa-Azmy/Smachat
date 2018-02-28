@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4D5A0F90D1641CD4920E60 /* Pods_Smachat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8034E4FC100E3DA2DC5960 /* Pods_Smachat.framework */; };
 		68581D702046F19C003ED2A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D6F2046F19C003ED2A5 /* AppDelegate.swift */; };
 		68581D722046F19C003ED2A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D712046F19C003ED2A5 /* ViewController.swift */; };
 		68581D752046F19C003ED2A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68581D732046F19C003ED2A5 /* Main.storyboard */; };
 		68581D772046F19C003ED2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68581D762046F19C003ED2A5 /* Assets.xcassets */; };
 		68581D7A2046F19C003ED2A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68581D782046F19C003ED2A5 /* LaunchScreen.storyboard */; };
+		68581D852046F4C0003ED2A5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68581D842046F4C0003ED2A5 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A8034E4FC100E3DA2DC5960 /* Pods_Smachat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smachat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F73217A625E2F951DD6AB7 /* Pods-Smachat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smachat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smachat/Pods-Smachat.release.xcconfig"; sourceTree = "<group>"; };
 		68581D6C2046F19C003ED2A5 /* Smachat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smachat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68581D6F2046F19C003ED2A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68581D712046F19C003ED2A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		68581D762046F19C003ED2A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68581D792046F19C003ED2A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68581D7B2046F19C003ED2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68581D822046F4BF003ED2A5 /* Smachat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smachat-Bridging-Header.h"; sourceTree = "<group>"; };
+		68581D832046F4C0003ED2A5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		68581D842046F4C0003ED2A5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smachat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smachat/Pods-Smachat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4D5A0F90D1641CD4920E60 /* Pods_Smachat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				68581D6E2046F19C003ED2A5 /* Smachat */,
 				68581D6D2046F19C003ED2A5 /* Products */,
+				FC969AE23F837A39408B72A8 /* Pods */,
+				6BF35BC5B6BDC2DF79283128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 		68581D6E2046F19C003ED2A5 /* Smachat */ = {
 			isa = PBXGroup;
 			children = (
+				68581D812046F497003ED2A5 /* Supporting Files */,
 				68581D6F2046F19C003ED2A5 /* AppDelegate.swift */,
 				68581D712046F19C003ED2A5 /* ViewController.swift */,
 				68581D732046F19C003ED2A5 /* Main.storyboard */,
@@ -64,6 +76,33 @@
 			path = Smachat;
 			sourceTree = "<group>";
 		};
+		68581D812046F497003ED2A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68581D832046F4C0003ED2A5 /* SWRevealViewController.h */,
+				68581D842046F4C0003ED2A5 /* SWRevealViewController.m */,
+				68581D822046F4BF003ED2A5 /* Smachat-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BF35BC5B6BDC2DF79283128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A8034E4FC100E3DA2DC5960 /* Pods_Smachat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC969AE23F837A39408B72A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */,
+				43F73217A625E2F951DD6AB7 /* Pods-Smachat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68581D7E2046F19C003ED2A5 /* Build configuration list for PBXNativeTarget "Smachat" */;
 			buildPhases = (
+				48CF4698160DA8A990B80CC3 /* [CP] Check Pods Manifest.lock */,
 				68581D682046F19C003ED2A5 /* Sources */,
 				68581D692046F19C003ED2A5 /* Frameworks */,
 				68581D6A2046F19C003ED2A5 /* Resources */,
+				67FBE77E89D331FCF0D84B3F /* [CP] Embed Pods Frameworks */,
+				BEC16DF5F47269FBA35CA624 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +138,7 @@
 				TargetAttributes = {
 					68581D6B2046F19C003ED2A5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +174,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48CF4698160DA8A990B80CC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smachat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FBE77E89D331FCF0D84B3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smachat/Pods-Smachat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smachat/Pods-Smachat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEC16DF5F47269FBA35CA624 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smachat/Pods-Smachat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68581D682046F19C003ED2A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +241,7 @@
 			files = (
 				68581D722046F19C003ED2A5 /* ViewController.swift in Sources */,
 				68581D702046F19C003ED2A5 /* AppDelegate.swift in Sources */,
+				68581D852046F4C0003ED2A5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +376,18 @@
 		};
 		68581D7F2046F19C003ED2A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z46VX56LDU;
 				INFOPLIST_FILE = Smachat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wissa-azmy.Smachat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smachat/Supporting Files/Smachat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +395,17 @@
 		};
 		68581D802046F19C003ED2A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43F73217A625E2F951DD6AB7 /* Pods-Smachat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z46VX56LDU;
 				INFOPLIST_FILE = Smachat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wissa-azmy.Smachat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Smachat/Supporting Files/Smachat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
