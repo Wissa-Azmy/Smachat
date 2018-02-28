@@ -14,6 +14,8 @@
 		68581D772046F19C003ED2A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68581D762046F19C003ED2A5 /* Assets.xcassets */; };
 		68581D7A2046F19C003ED2A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68581D782046F19C003ED2A5 /* LaunchScreen.storyboard */; };
 		68581D852046F4C0003ED2A5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68581D842046F4C0003ED2A5 /* SWRevealViewController.m */; };
+		68581D8E2046F955003ED2A5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D8D2046F955003ED2A5 /* ChatVC.swift */; };
+		68581D902046F965003ED2A5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D8F2046F965003ED2A5 /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		68581D822046F4BF003ED2A5 /* Smachat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smachat-Bridging-Header.h"; sourceTree = "<group>"; };
 		68581D832046F4C0003ED2A5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		68581D842046F4C0003ED2A5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		68581D8D2046F955003ED2A5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		68581D8F2046F965003ED2A5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smachat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smachat/Pods-Smachat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,9 @@
 		68581D6E2046F19C003ED2A5 /* Smachat */ = {
 			isa = PBXGroup;
 			children = (
+				68581D862046F861003ED2A5 /* Controller */,
+				68581D882046F870003ED2A5 /* Model */,
+				68581D872046F86A003ED2A5 /* View */,
 				68581D812046F497003ED2A5 /* Supporting Files */,
 				68581D6F2046F19C003ED2A5 /* AppDelegate.swift */,
 				68581D712046F19C003ED2A5 /* ViewController.swift */,
@@ -84,6 +91,29 @@
 				68581D822046F4BF003ED2A5 /* Smachat-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68581D862046F861003ED2A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68581D8D2046F955003ED2A5 /* ChatVC.swift */,
+				68581D8F2046F965003ED2A5 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68581D872046F86A003ED2A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68581D882046F870003ED2A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6BF35BC5B6BDC2DF79283128 /* Frameworks */ = {
@@ -239,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68581D8E2046F955003ED2A5 /* ChatVC.swift in Sources */,
 				68581D722046F19C003ED2A5 /* ViewController.swift in Sources */,
 				68581D702046F19C003ED2A5 /* AppDelegate.swift in Sources */,
 				68581D852046F4C0003ED2A5 /* SWRevealViewController.m in Sources */,
+				68581D902046F965003ED2A5 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
