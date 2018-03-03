@@ -21,6 +21,7 @@
 		68581D9920482D3F003ED2A5 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9820482D3F003ED2A5 /* loginVC.swift */; };
 		68581D9B2048411E003ED2A5 /* signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9A2048411E003ED2A5 /* signupVC.swift */; };
 		68581D9D204B0BBC003ED2A5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9C204B0BBC003ED2A5 /* RoundedButton.swift */; };
+		68581DA0204B3253003ED2A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9F204B3253003ED2A5 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		68581D9820482D3F003ED2A5 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		68581D9A2048411E003ED2A5 /* signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupVC.swift; sourceTree = "<group>"; };
 		68581D9C204B0BBC003ED2A5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		68581D9F204B3253003ED2A5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smachat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smachat/Pods-Smachat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 		68581D6E2046F19C003ED2A5 /* Smachat */ = {
 			isa = PBXGroup;
 			children = (
+				68581D9E204B109E003ED2A5 /* Services */,
 				68581D93204826BB003ED2A5 /* Utilities */,
 				68581D862046F861003ED2A5 /* Controller */,
 				68581D882046F870003ED2A5 /* Model */,
@@ -137,6 +140,14 @@
 				68581D94204826CF003ED2A5 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		68581D9E204B109E003ED2A5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68581D9F204B3253003ED2A5 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		6BF35BC5B6BDC2DF79283128 /* Frameworks */ = {
@@ -297,6 +308,7 @@
 				68581D722046F19C003ED2A5 /* ViewController.swift in Sources */,
 				68581D9B2048411E003ED2A5 /* signupVC.swift in Sources */,
 				68581D9920482D3F003ED2A5 /* loginVC.swift in Sources */,
+				68581DA0204B3253003ED2A5 /* AuthService.swift in Sources */,
 				68581D9220481701003ED2A5 /* GradientView.swift in Sources */,
 				68581D702046F19C003ED2A5 /* AppDelegate.swift in Sources */,
 				68581D95204826CF003ED2A5 /* Constants.swift in Sources */,
