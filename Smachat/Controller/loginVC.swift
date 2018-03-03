@@ -19,4 +19,8 @@ class loginVC: UIViewController {
     @IBAction func closeBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func signupBtnPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: TO_SIGNUP, sender: nil)
+    }
 }

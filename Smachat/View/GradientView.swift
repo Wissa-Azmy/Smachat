@@ -7,16 +7,17 @@
 //
 
 import UIKit
+
 @IBDesignable  // To make it render inside the storyboard with cutom properties
-
 class GradientView: UIView {
-
-    @IBInspectable var topColor = #colorLiteral(red: 0.2901960784, green: 0.3019607843, blue: 0.8470588235, alpha: 1) {
+    
+    // You must explicity set the var type(UIColor), otherwise it won't show up in the property inspector
+    @IBInspectable var topColor: UIColor = #colorLiteral(red: 0.2901960784, green: 0.3019607843, blue: 0.8470588235, alpha: 1) {
         // Makes it update automatically when colors change from the storyboard properties
         didSet { self.setNeedsLayout() }
     }
     
-    @IBInspectable var bottomColor = #colorLiteral(red: 0.1725490196, green: 0.831372549, blue: 0.8470588235, alpha: 1) {
+    @IBInspectable var bottomColor: UIColor = #colorLiteral(red: 0.1725490196, green: 0.831372549, blue: 0.8470588235, alpha: 1) {
         didSet { self.setNeedsLayout() }
     }
     

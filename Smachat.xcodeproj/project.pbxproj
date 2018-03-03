@@ -19,6 +19,8 @@
 		68581D9220481701003ED2A5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9120481701003ED2A5 /* GradientView.swift */; };
 		68581D95204826CF003ED2A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D94204826CF003ED2A5 /* Constants.swift */; };
 		68581D9920482D3F003ED2A5 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9820482D3F003ED2A5 /* loginVC.swift */; };
+		68581D9B2048411E003ED2A5 /* signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9A2048411E003ED2A5 /* signupVC.swift */; };
+		68581D9D204B0BBC003ED2A5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68581D9C204B0BBC003ED2A5 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		68581D9120481701003ED2A5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		68581D94204826CF003ED2A5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68581D9820482D3F003ED2A5 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
+		68581D9A2048411E003ED2A5 /* signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupVC.swift; sourceTree = "<group>"; };
+		68581D9C204B0BBC003ED2A5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		D7827B1C234E9D3F28A5EB5E /* Pods-Smachat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smachat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smachat/Pods-Smachat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +108,7 @@
 				68581D8D2046F955003ED2A5 /* ChatVC.swift */,
 				68581D8F2046F965003ED2A5 /* ChannelVC.swift */,
 				68581D9820482D3F003ED2A5 /* loginVC.swift */,
+				68581D9A2048411E003ED2A5 /* signupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 				68581D732046F19C003ED2A5 /* Main.storyboard */,
 				68581D782046F19C003ED2A5 /* LaunchScreen.storyboard */,
 				68581D9120481701003ED2A5 /* GradientView.swift */,
+				68581D9C204B0BBC003ED2A5 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				68581D8E2046F955003ED2A5 /* ChatVC.swift in Sources */,
+				68581D9D204B0BBC003ED2A5 /* RoundedButton.swift in Sources */,
 				68581D722046F19C003ED2A5 /* ViewController.swift in Sources */,
+				68581D9B2048411E003ED2A5 /* signupVC.swift in Sources */,
 				68581D9920482D3F003ED2A5 /* loginVC.swift in Sources */,
 				68581D9220481701003ED2A5 /* GradientView.swift in Sources */,
 				68581D702046F19C003ED2A5 /* AppDelegate.swift in Sources */,
