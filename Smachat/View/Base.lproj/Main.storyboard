@@ -141,7 +141,7 @@
         <!--LoginVC-->
         <scene sceneID="Jo9-em-oQD">
             <objects>
-                <viewController id="m2I-Cz-Lur" customClass="loginVC" customModule="Smachat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m2I-Cz-Lur" customClass="LoginVC" customModule="Smachat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hgu-Ae-NYA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="1928.8" y="-212.06896551724139"/>
         </scene>
-        <!--SignupVC-->
+        <!--RegisterVC-->
         <scene sceneID="18f-zj-v8q">
             <objects>
-                <viewController id="nuT-aX-FTn" customClass="signupVC" customModule="Smachat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nuT-aX-FTn" customClass="RegisterVC" customModule="Smachat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pc2-6m-0tN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
                                 <rect key="frame" x="331" y="52" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
-                                    <action selector="closeBtnPressed:" destination="nuT-aX-FTn" eventType="touchUpInside" id="AYE-9k-fOM"/>
+                                    <action selector="closeBtnPressed:" destination="nuT-aX-FTn" eventType="touchUpInside" id="1H4-TS-EPK"/>
                                     <action selector="closeBtnPressed:" destination="m2I-Cz-Lur" eventType="touchUpInside" id="W01-xK-ZaC"/>
                                 </connections>
                             </button>
@@ -299,6 +299,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="pickAvatarPressed:" destination="nuT-aX-FTn" eventType="touchUpInside" id="Ldr-7L-Zss"/>
                                     <action selector="signupBtnPressed:" destination="Y7k-Ie-0uK" eventType="touchUpInside" id="5VA-4e-Zf5"/>
                                     <action selector="signupBtnPressed:" destination="m2I-Cz-Lur" eventType="touchUpInside" id="upH-eE-Eff"/>
                                 </connections>
@@ -376,6 +377,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="pickBGColorPressed:" destination="nuT-aX-FTn" eventType="touchUpInside" id="HfG-8e-teV"/>
                                     <action selector="signupBtnPressed:" destination="m2I-Cz-Lur" eventType="touchUpInside" id="0sH-Az-jeU"/>
                                     <action selector="signupBtnPressed:" destination="Y7k-Ie-0uK" eventType="touchUpInside" id="SVG-yf-feQ"/>
                                 </connections>
@@ -385,7 +387,7 @@
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CmS-CD-7mz"/>
-                                    <constraint firstAttribute="width" constant="250" id="jgt-sD-W9g"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="jgt-sD-W9g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Creat Account">
@@ -396,6 +398,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerBtnPressed:" destination="nuT-aX-FTn" eventType="touchUpInside" id="p1y-5x-1Hr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -419,6 +424,10 @@
                         <viewLayoutGuide key="safeArea" id="Tnq-og-RtB"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="FZ9-a7-scU" id="32r-ut-MQe"/>
+                        <outlet property="passwordTxt" destination="Sgn-3l-5a3" id="m52-K1-e7G"/>
+                        <outlet property="userImg" destination="MSN-2K-wY0" id="2V5-Z7-gs0"/>
+                        <outlet property="usernameTxt" destination="1Rh-bX-028" id="8L5-8w-2Lf"/>
                         <segue destination="aDP-9J-qc3" kind="unwind" identifier="unwinedToChannel" unwindAction="prepareforUnwindWithSegue:" id="nCw-Sf-yrD"/>
                     </connections>
                 </viewController>
